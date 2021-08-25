@@ -446,7 +446,6 @@ padding: 0 80px 0 0;
                 border: 1px solid rgb(190, 190, 190, .5);
                 padding: 6% 3%;
                 transition: transform .2s;
-                
             }
             
             .lang:hover {
@@ -469,7 +468,7 @@ padding: 0 80px 0 0;
                 text-align: center;
             }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 700px){
     header{
         padding:2%;
     }
