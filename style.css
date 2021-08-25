@@ -1,0 +1,296 @@
+body {
+    display: flex;
+}
+
+aside {
+    position: fixed;
+    width: 20%;
+}
+
+.aside-container {
+    width: 40%;
+    border-right: solid 1px lightgray;
+    box-shadow: 1px 2px lightgray;
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+.other-container {
+    margin-left: 50px;
+    padding-left: 0;
+}
+
+aside img {
+    border-radius: 50%;
+}
+
+.aside-list {
+    list-style-type: none;
+    padding: 10px;
+    font-size: large;
+    border-bottom: 1px solid lightgray;
+    width: 150px;
+}
+
+aside ul {
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+/* added  features from below by Kanat and Tumar */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+}
+
+.experience {
+    text-align: center;
+    padding-left: 5%;
+}
+
+.experience h2 {
+    text-transform: uppercase;
+}
+
+.boxes {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid rgb(190, 190, 190, .5);
+    margin: 5px;
+    width: 45%;
+    padding: 1%;
+
+
+}
+
+.box:hover {
+    box-shadow: 0px 0px 25px rgb(190, 190, 190);
+
+}
+
+.box:hover .years {
+    animation: year-bar;
+    animation-duration: .5s;
+    padding-left: 100px;
+
+}
+@keyframes year-bar{
+ 0% { width: 90px ;}
+ 100% {width: 250px;}
+}
+
+.years {
+    background-color: orangered;
+    padding: 2%;
+    color: white;
+    width: 90px;
+}
+
+.years-icon {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+    border: 5px solid orangered;
+    border-radius: 50%;
+}
+
+.box h5 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 2%;
+}
+ /* progress skills part */
+.others {
+    display: flex;
+    text-align: left;
+}
+
+.progress {
+    background-color: rgb(190, 190, 190, .2);
+    display: flex;
+    height: 25px;
+    font-size: 10px;
+    justify-content: left;
+    margin-bottom: 25px;
+}
+
+.orange-css,
+.orange-design,
+.orange-html,
+.orange-js,
+.orange-react {
+    background-color: orangered;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.progress:hover .orange-html {
+    animation: orange-html;
+    animation-duration: 0.7s;
+}
+
+@keyframes orange-html {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+.progress:hover .orange-css {
+    animation: orange-css;
+    animation-duration: 0.7s;
+}
+
+@keyframes orange-css {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 85%;
+    }
+}
+
+.progress:hover .orange-js {
+    animation: orange-js;
+    animation-duration: 0.7s;
+}
+
+@keyframes orange-js {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+.progress:hover .orange-react {
+    animation: orange-react;
+    animation-duration: 0.7s;
+}
+
+@keyframes orange-react {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 60%;
+    }
+}
+
+.progress:hover .orange-design {
+    animation: orange-design;
+    animation-duration: 0.7s;
+}
+
+@keyframes orange-design {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+.progress p {
+    padding: 10px 0px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.leftskill,
+.rightskill {
+    margin: 60px 40px 0px 0px;
+    width: 47%
+}
+
+.orange-html {
+    width: 40%;
+}
+
+.orange-css {
+    width: 85%;
+}
+
+.orange-js {
+    width: 70%;
+}
+
+.orange-react {
+    width: 60%;
+}
+
+.orange-design {
+    width: 90%;
+}
+
+/* language part */
+.language-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lang {
+    width: 40%;
+    margin: 20px;
+    display: flex;
+    border: 1px solid rgb(190, 190, 190, .5);
+    padding: 20px 0px;
+    transition: transform .2s;
+}
+
+.lang:hover {
+    box-shadow: 0px 0px 25px rgb(190, 190, 190);
+    transform: scale(1.1);
+}
+
+
+.percentage {
+    border: 5px solid orangered;
+    border-radius: 50%;
+    background: orangered;
+    color: white;
+    padding: 7px 3px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.lang-name {
+    padding: 7px 20px;
+    margin: 0;
+
+}
